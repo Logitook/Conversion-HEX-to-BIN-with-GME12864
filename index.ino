@@ -2,8 +2,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define SCREEN_WIDTH 128 // The length of the screen, in pixels
-#define SCREEN_HEIGHT 64 // The height of the screen, in pixels
+#define SCREEN_WIDTH 128 // Largeur de l'écran en pixels
+#define SCREEN_HEIGHT 64 // Hauteur de l'écran en pixels
 
 // Declaration d'un objet de type Adafruit_SSD1306
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
@@ -12,8 +12,8 @@ int bp1 = 2;
 int bp2 = 3;
 unsigned long val10;
 unsigned t = 100;
-unsigned long previousMillis = 0; // Initialize the variable which will be used to store the last time
-const long interval = 100;   // Time interval between two measurements
+unsigned long previousMillis = 0; // Initialisation de la variable qui va stocker le temps
+const long interval = 100;   // Temps entre deux mesures
 
 void setup() {
     pinMode(bp1, INPUT);
